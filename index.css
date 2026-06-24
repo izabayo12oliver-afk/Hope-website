@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image:url(sun.jpg);
+    background-size:cover;
+    background-position:center;
+    font-family:'enter'sans-serif;
+    display:flex;
+    flex-direction:column;
+    color:white;
+    min-height: 100vh;
+}
+.main-header{
+    padding:25px 40px;
+    position:relative;
+    background-color:white;
+    z-index:10;
+    
+}
+.div-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:0 auto;
+}
+.nav-links{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    color:rgba(0, 0, 0, 0.712)
+
+}
+.logo{
+    font-family:'cormorant garamond',serif;
+    font-size:1.4rem;
+    letter-spacing:0.15rem;
+    color:rgba(16, 16, 153, 0.863);
+    text-decoration:none;
+    font-weight:bold;
+}
+.nav-links a{
+    color:black;
+    text-decoration:none;
+    font-size:0.75rem;
+    font-weight:700;
+    letter-spacing:0.1rem;
+    transition:color 0.2s;
+
+}
+.nav-links a:hover{
+    color:sandybrown
+
+}
+.main-part{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    height:450px;
+    background-image:url(sun.jpg);
+    background-size:cover;
+    background-position:center;
+
+}
+.div-img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.div-paragraph{
+    display:flex;
+    align-items:center;
+    font-size:1.5rem;
+    justify-content:center;
+    margin-top:170px;
+    padding:100px;
+}
+.word-reflection{
+    display:flex;
+    color:white;
+    text-decoration:none;
+    background-color:rgb(153, 80, 16);
+    padding:10px 30px;
+    margin-top:-60px;
+    border-radius:10%;
+    font-size:1.2rem;
+
+}
+.word-reflection a{
+    color:white;
+    text-decoration:none;
+}
+.word-reflection a:hover{
+    color:rgb(36, 62, 139);
+}
+.footer-details{
+   background-color:rgb(252, 248, 248);
+    display: flex;
+    position:relative;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    z-index:120;
+}
+
+.bible{
+color:black;
+font-size:1.2rem;
+font-weight:700;
+padding:20px 0px;
+}
+.bible i{
+    color:saddlebrown;
+    font-size:2rem;
+    margin-bottom:10px;
+    margin-left:40px;
+
+}
+.bible a{
+    color:rgb(20, 17, 17);
+    text-decoration:none;
+}
+.bible a:hover{
+    color:saddlebrown;
+}
+.announce{
+    color:black;
+    font-size:1.2rem;
+    font-weight:700;
+    padding:20px 0px;
+
+}
+.announce a{
+    color:rgb(20, 17, 17);
+    text-decoration:none;
+}
+
+.announce a:hover{
+    color:saddlebrown;
+}
+.announce i{
+    color:saddlebrown;
+    font-size:2rem;
+    margin-bottom:10px;
+    margin-left:40px;
+}
+.prayer{
+    color:black;
+    font-size:1.2rem;
+    font-weight:700;
+    padding:20px 0px;
+    margin-right:20px;
+
+}
+.prayer a{
+    color:rgb(20, 17, 17);
+    text-decoration:none;
+}
+.prayer a:hover{
+    color:saddlebrown;
+}
+.prayer i{
+    color:saddlebrown;
+    font-size:2rem;
+    margin-bottom:10px;
+    margin-left:40px;
+}
