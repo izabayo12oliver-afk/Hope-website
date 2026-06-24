@@ -1,0 +1,217 @@
+/* Global Styles & Elegant Cream Background */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f7f5f0;
+    color: #2b2b2b;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container simulating the paper form */
+.form-container {
+    background-color: #ffffff;
+    max-width: 750px;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header .logo {
+    font-size: 32px;
+    color: #1a365d;
+    margin-bottom: 5px;
+}
+
+.form-header h1 {
+    font-size: 26px;
+    color: #1a365d;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.form-header p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: italic;
+    color: #555;
+    margin: 0;
+}
+
+/* Form Fields Setup */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+legend {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+}
+
+.section-subtext {
+    font-size: 14px;
+    margin: 0 0 12px 0;
+    color: #333;
+}
+
+/* Row alignment for Name and Date */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Clean, underlined inputs mimicking the print form */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 8px 4px;
+    border: none;
+    border-bottom: 1px solid #777;
+    background-color: transparent;
+    outline: none;
+    color: #1a365d;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-bottom: 1px solid #1a365d;
+}
+
+textarea {
+    border: 1px solid #777;
+    padding: 8px;
+    resize: vertical;
+}
+
+/* Checkbox & Radio layout grids */
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.checkbox-label, .radio-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.checkbox-label input, .radio-label input {
+    margin-right: 8px;
+}
+
+/* Handling the "Other:" text underline inline */
+.other-label {
+    grid-column: span 2;
+}
+
+.inline-text {
+    border: none;
+    border-bottom: 1px solid #777;
+    margin-left: 5px;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Footer & Button Styling */
+.form-footer {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px dashed #ccc;
+    padding-top: 25px;
+}
+
+.submit-btn {
+    background-color: #1a365d;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #2b4c7e;
+}
+
+.footer-instructions {
+    font-size: 13px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.blessing {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: #1a365d;
+    margin: 10px 0 0 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+    .other-label {
+        grid-column: span 1;
+    }
+    .form-container {
+        padding: 20px;
+    }
+}
