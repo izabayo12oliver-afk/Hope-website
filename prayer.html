@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer & Requests - HOPE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="words.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="div-container">
+            <a href="index.html" class="logo">HOPE</a>
+            <nav class="nav-links">
+                <a href="index.html"> HOME</a>
+                <a href="words.html"> WORDS</a>
+                <a href="announcements.html"> ANNOUNCEMENTS</a>
+                <a href="prayer.html"> PRAYER</a>
+                <a href="about.html"> ABOUT</a>
+            </nav>
+        </div>
+    </header>
+
+  <div class="form-container">
+        <!-- Header Section -->
+        <div class="form-header">
+            
+            <h1><div class="logo">🙏</div>PRAYER REQUEST FORM</h1>
+            <p>We invite you to share your concerns and joys.<br>Please fill out this form so our prayer team can pray with you.</p>
+        </div>
+
+        <form>
+            <!-- Your Information -->
+            <fieldset>
+                <legend>YOUR INFORMATION</legend>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="name">Name (Optional):</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="input-group date-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email (Optional, if you wish to be contacted):</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </fieldset>
+
+            <!-- Your Request -->
+            <fieldset>
+                <legend>YOUR REQUEST</legend>
+                <div class="input-group">
+                    <label for="request">Please describe your prayer request below:</label>
+                    <textarea id="request" name="request" rows="5"></textarea>
+                </div>
+
+                <p class="section-subtext">Type of request: (Check all that apply)</p>
+                <div class="checkbox-grid">
+                    <label class="checkbox-label"><input type="checkbox" name="type" value="healing"> Healing / Health</label><br>
+                    <label class="checkbox-label"><input type="checkbox" name="type" value="guidance"> Guidance / Wisdom</label><br>
+                    <label class="checkbox-label"><input type="checkbox" name="type" value="financial"> Financial Need</label><br>
+                    <label class="checkbox-label"><input type="checkbox" name="type" value="gratitude"> Gratitude / Praise</label><br>
+                    <label class="checkbox-label"><input type="checkbox" name="type" value="family"> Family / Relationship</label><br>
+                    <label class="checkbox-label other-label">
+                        <input type="checkbox" name="type" value="other"> Other: 
+                        <input type="text" class="inline-text" name="other_detail">
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Confidentiality -->
+            <fieldset>
+                <legend>CONFIDENTIALITY</legend>
+                <p class="section-subtext">Would you like your request kept confidential (seen only by the pastoral staff)?</p>
+                <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="confidential" value="yes"> Yes</label>
+                    <label class="radio-label"><input type="radio" name="confidential" value="no"> No (It may be shared with our prayer chain)</label>
+                </div>
+            </fieldset>
+
+            <!-- Pastoral Follow-up -->
+            <fieldset>
+                <legend>WOULD YOU LIKE PASTORAL FOLLOW-UP?</legend>
+                <p class="section-subtext">(Please provide contact info above)</p>
+                <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="followup" value="yes"> Yes</label>
+                    <label class="radio-label"><input type="radio" name="followup" value="no"> No</label>
+                </div>
+            </fieldset>
+
+            <!-- Submit & Footer -->
+            <div class="form-footer">
+                <button type="submit" class="submit-btn">Submit Request</button>
+                <p class="footer-instructions">Place this form in the collection plate or return it to the church office.</p>
+                <p class="blessing">God bless you.</p>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer-details">
+        <div class="footer-item bible"><i class="fa-solid fa-book-bible"></i><a>Words of Hope</a></div>
+        <div class="footer-item announce"><i class="fa-solid fa-bullhorn"></i><a>Announcements</a></div>
+        <div class="footer-item prayer"><i class="fa-solid fa-hands-praying"></i><a>Prayer Request</a></div>
+    </footer>
+
+</body>
+</html>
