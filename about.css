@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image:url(sunset.jpg);
+    background-size:cover;
+    background-position:center;
+    font-family:'enter'sans-serif;
+    display:flex;
+    flex-direction:column;
+    color:white;
+    height: 100vh;
+    
+}
+.main-header{
+    padding:12px 40px;
+    position:relative;
+    background-color:white;
+    z-index:10;
+
+    
+}
+.div-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:0 auto;
+}
+.nav-links{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    color:rgba(0, 0, 0, 0.712)
+
+}
+.logo{
+    font-family:'cormorant garamond',serif;
+    font-size:1.4rem;
+    letter-spacing:0.15rem;
+    color:rgba(16, 16, 153, 0.863);
+    text-decoration:none;
+    font-weight:bold;
+}
+.nav-links a{
+    color:black;
+    text-decoration:none;
+    font-size:0.75rem;
+    font-weight:700;
+    letter-spacing:0.1rem;
+    transition:color 0.2s;
+
+}
+.nav-links a:hover{
+    color:sandybrown;
+}
+.graph{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgba(3, 29, 105, 0.767);
+    margin-top:5px;
+    font-weight:700;
+    font-size:1.6rem;
+    
+}
+.st-mission{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    z-index: 5;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 20px;
+
+}
+.section-subtitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.story-mission{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    padding-right:20px;
+
+}
+.our-story{
+    padding-right:100px;
+    font-weight:500;
+    font-size:1.6rem;
+    
+    
+}
+
+    
+
+.read a{
+    display:flex;
+    color:white;
+    text-decoration:none;
+    background-color:sandybrown;
+    padding: 10px 15px;
+    border-radius:5px;
+   flex-direction:columns;
+   margin-top:30px;
+   justify-content:center;
+   align-items:center;
+   
+}
+.believe{
+    padding-right:30px;
+    font-weight:500;
+    font-size:1.6rem;
+}
+
+.value a{
+    display:flex;
+    color:white;
+    text-decoration:none;
+    background-color:sandybrown;
+    padding:10px 15px;
+    border-radius:5px;
+    margin-top:64px;
+    justify-content:center;
+    align-items:center;
+}
+.footer-details{
+   background-color:rgb(148, 73, 8);
+    display: flex;
+    position:relative;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    z-index:120;
+}
+
+.bible{
+color:white;
+font-size:1.2rem;
+font-weight:700;
+padding:20px 0px;
+}
+.bible i{
+    color:rgb(248, 245, 243);
+    font-size:2rem;
+    margin-bottom:10px;
+    margin-left:40px;
+
+}
+.bible a{
+    color:rgb(241, 235, 235);
+    text-decoration:none;
+}
+.bible a:hover{
+    color:saddlebrown;
+}
+.announce{
+    color:rgb(255, 255, 255);
+    font-size:1.2rem;
+    font-weight:700;
+    padding:20px 0px;
+
+}
+.announce a{
+    color:rgb(247, 244, 244);
+    text-decoration:none;
+}
+
+.announce a:hover{
+    color:saddlebrown;
+}
+.announce i{
+    color:rgb(245, 243, 241);
+    font-size:2rem;
+    margin-bottom:10px;
+    margin-left:40px;
+}
+.prayer{
+    color:white;
+    font-size:1.2rem;
+    font-weight:700;
+    padding:20px 0px;
+    margin-right:20px;
+
+}
+.prayer a{
+    color:rgb(247, 242, 242);
+    text-decoration:none;
+}
+.prayer a:hover{
+    color:saddlebrown;
+}
+.prayer i{
+    color:rgb(243, 240, 238);
+    font-size:2rem;
+    margin-bottom:10px;
+    margin-left:40px;
+}
