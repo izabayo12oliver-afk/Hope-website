@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 body{
-    background-image:url(sunset.jpg);
+    background-image:url('images/sunset.jpg');
     background-size:cover;
     background-position:center;
     font-family:'enter'sans-serif;
