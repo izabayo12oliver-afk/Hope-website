@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 body{
-    background-image:url(sun.jpg);
+    background-image:url('images/sun.jpg');
     background-size:cover;
     background-position:center;
     font-family:'enter'sans-serif;
