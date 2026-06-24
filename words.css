@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(sungod.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* --- HEADER --- */
+.main-header {
+    padding: 15px 40px;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: flex;
+    top:0;
+}
+.div-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    font-size: 1.5rem;
+    color: #101099;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+.nav-links a:hover {
+    color: sandybrown;
+}
+
+/* --- MAIN CENTRAL WRAPPER LAYER --- */
+.word-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.central-container {
+    background-color: #fdf8eb; /* Cream background from the reference image */
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.sub-title {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-title span {
+    font-size: 1.3rem;
+    color: #555;
+    font-weight: 400;
+}
+
+/* --- SIDE-BY-SIDE GRID LAYOUT --- */
+.layout-body {
+    display: grid;
+    grid-template-columns: 260px 1fr; /* Sidebar width vs Content rest */
+    gap: 30px;
+    align-items: start;
+}
+
+/* --- SIDEBAR --- */
+.sidebar-filter {
+    text-align: center;
+}
+.sidebar-filter h3 {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    color: #333;
+    line-height: 1.4;
+}
+.sidebar-filter h3 span {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+.decorative-line {
+    color: #bfa07a;
+    margin: 8px 0 15px 0;
+}
+.filter-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.filter-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border: 1px solid #ebdcb9;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+.filter-item i {
+    width: 25px;
+    font-size: 1.1rem;
+    color: #8B4513; /* Brown theme color */
+    margin-right: 10px;
+}
+
+/* --- MAIN FEED CONTENT --- */
+.content-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Today's Word Card */
+.daily-bread-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    text-align: center;
+}
+.daily-bread-card h3 {
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 15px;
+}
+.scripture-text {
+    font-size: 1.05rem;
+    color: #111;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.reflection-text {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.devotional-btn {
+    display: inline-block;
+    background-color: #8B4513;
+    color: white;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Filter Summary Row */
+.applied-filters-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.filter-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.filter-badge {
+    background-color: #8B4513;
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* Columns Devotional Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.devotional-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+}
+.devotional-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.card-scripture {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+.card-reflection {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* --- FOOTER LAYOUT FIXED --- */
+.footer-details {
+    background-color: rgb(148, 73, 8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+   
+    bottom:0;
+}
+.footer-item {
+    text-align: center;
+    color: white;
+}
+.footer-item i {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.footer-item a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 4px;
+}
