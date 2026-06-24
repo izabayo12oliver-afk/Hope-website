@@ -1,0 +1,113 @@
+/* Layout Alignment Split */
+.announcement-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 240px; /* Separates cards and calendar columns side by side */
+    gap: 20px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+/* Featured Top Box styling */
+.featured-announcement {
+    background-color: white;
+    border-radius: 6px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+.featured-announcement h3 {
+    font-size: 1.3rem;
+    color: #111;
+    margin-bottom: 8px;
+    letter-spacing: 0.05rem;
+}
+.announcement-meta {
+    color: #555;
+    font-size: 0.9rem;
+    margin: 3px 0;
+}
+
+/* Left Mini Cards styling */
+.mini-cards-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.mini-announcement-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.mini-announcement-card .card-icon i {
+    font-size: 1.8rem;
+    color: #8B4513;
+    width: 35px;
+}
+.mini-announcement-card .card-text h4 {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 2px;
+}
+.mini-announcement-card .card-text p {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Right Column Sidebar area */
+.interactive-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Calendar Box Design */
+.mock-calendar-box {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 12px;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.78rem;
+    text-align: center;
+}
+.calendar-table th {
+    padding-bottom: 6px;
+    color: #333;
+}
+.calendar-table td {
+    padding: 4px 0;
+    color: #111;
+}
+.calendar-table .disabled-days td, 
+td.disabled-days {
+    color: #ccc; /* Greys out the overlapping calendar dates from next/last month */
+}
+
+/* Brown Button block formatting */
+.submit-announcement {
+    display: flex;
+    background-color: #8B4513;
+    color: white !important;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
